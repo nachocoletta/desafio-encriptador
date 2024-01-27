@@ -75,7 +75,7 @@ function desencriptar() {
 }
 
 function reiniciar() {
-    alert('hola')
+
     let titulo = document.querySelector('.tituloContenedorIzquierdo')
     let mensaje = document.querySelector('.textoContenedorIzquierdo')
 
