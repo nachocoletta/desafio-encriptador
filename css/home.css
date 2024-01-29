@@ -4,13 +4,14 @@
     flex: 80% 20%;
     justify-content: space-between;
     height: 100vh;
-   /* height: 100%; */
+    /* height: 100%; */
 }
 
-.contenedorIzquierdo{
+.contenedorIzquierdo {
     /* background-color: blue; */
     width: 100%;
 }
+
 .imgLogo {
     margin-top: 40px;
     margin-left: 40px;
@@ -48,15 +49,15 @@
 }
 
 .soloLetras {
-     margin-left: 100px;
+    margin-left: 100px;
 }
 
 .botones {
     /* background-color: aliceblue; */
-    
+
     display: flex;
     align-items: center;
-    
+
     gap: 100px;
 
 }
@@ -67,6 +68,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 30px;
 }
+
 .botonEncriptar {
     background-color: darkblue;
     border-radius: 24px;
@@ -77,17 +79,18 @@
     color: antiquewhite
 }
 
-.botonEncriptar:hover{
+.botonEncriptar:hover {
     background-color: lightblue;
-    color: darkblue;  
-    cursor: pointer;  
+    color: darkblue;
+    cursor: pointer;
 }
 
 .botonDesencriptar:hover {
     background-color: burlywood;
-    color: antiquewhite; 
+    color: antiquewhite;
     cursor: pointer;
 }
+
 .botonDesencriptar {
     background-color: antiquewhite;
     border-radius: 24px;
@@ -120,26 +123,40 @@
     text-align: center;
 }
 
-@media screen and (width <= 1000px) {
+@media screen and (width <=1000px) {
+    body {
+        background-color: grey;
+    }
+
     .page {
         flex-direction: column-reverse;
         flex: 50% 50%;
     }
-    
-    .contenedorDerecho {
 
+    .contenedorDerecho {
+        position: relative;
+        height: 50%;
+        /* background-color: red; */
+    }
+
+    .contenedorIzquierdo {
+        width: none;
+        height: 50%;
+        /* background-color: aqua; */
     }
 
     .contenedorIzquierdo div img {
-        display: none;    
+        display: none;
         background-color: red;
     }
 
-    
+    .imgChaboncito {
+        display: none;
+    }
 
 
     .botones {
-        background-color: aqua;
+        /* background-color: aqua; */
         gap: 20px;
     }
 
@@ -147,11 +164,14 @@
         padding-right: 30px;
     }
 
-    .botonEncriptar, .botonDesencriptar, .botonEncriptar {
-        width: 100px;
-    height: 50px;
-    padding: 12px;
-    gap: 8px;
+    .botonEncriptar,
+    .botonDesencriptar,
+    .botonEncriptar {
+        width: 180px;
+        height: 50px;
+        padding: 12px;
+        gap: 8px;
+        margin-bottom: 30px;
     }
 
     .tituloContenedorIzquierdo {
@@ -159,6 +179,27 @@
     }
 }
 
-@media screen and (width <= 650px) {
-    
+@media screen and (width <=650px) {
+    #textoAProcesar {
+        padding-right: 200px;
+        padding-bottom: 280px;
+        border-radius: 2%;
+        /* margin-left: 100px; */
+        margin-top: 30px;
+        background-color: #CED4DA;
+        border: none;
+        font-size: xx-large;
+        width: 200px;
+    }
+
+    .botonEncriptar,
+    .botonDesencriptar,
+    .botonEncriptar {
+        width: 110px;
+        height: 50px;
+        padding: 12px;
+        gap: 8px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+    }
 }
