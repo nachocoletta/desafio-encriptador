@@ -3,8 +3,8 @@
     display: flex;
     flex: 80% 20%;
     justify-content: space-between;
-    /* height: 97vh; */
-   height: 100%;
+    height: 100vh;
+   /* height: 100%; */
 }
 
 .contenedorIzquierdo{
@@ -118,5 +118,47 @@
 .tituloContenedorIzquierdo {
     font-size: 42px;
     text-align: center;
+}
 
+@media screen and (width <= 1000px) {
+    .page {
+        flex-direction: column-reverse;
+        flex: 50% 50%;
+    }
+    
+    .contenedorDerecho {
+
+    }
+
+    .contenedorIzquierdo div img {
+        display: none;    
+        background-color: red;
+    }
+
+    
+
+
+    .botones {
+        background-color: aqua;
+        gap: 20px;
+    }
+
+    .texto {
+        padding-right: 30px;
+    }
+
+    .botonEncriptar, .botonDesencriptar, .botonEncriptar {
+        width: 100px;
+    height: 50px;
+    padding: 12px;
+    gap: 8px;
+    }
+
+    .tituloContenedorIzquierdo {
+        font-size: 25px;
+    }
+}
+
+@media screen and (width <= 650px) {
+    
 }
