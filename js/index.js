@@ -42,7 +42,7 @@ function encriptar() {
     let mensaje = document.querySelector('.textoContenedorIzquierdo')
     titulo.innerText = "Mensaje Encriptado"
     mensaje.innerText = newText
-    alert(newText)
+    // alert(newText)
 }
 
 function desencriptar() {
@@ -70,7 +70,7 @@ function desencriptar() {
     let mensaje = document.querySelector('.textoContenedorIzquierdo')
     titulo.innerText = "Mensaje Desencriptado"
     mensaje.innerText = newText
-    alert(newText)
+    // alert(newText)
     // alert(newText)
 }
 
